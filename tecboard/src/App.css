@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #06151A;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  background: linear-gradient(180deg,
+      rgba(23, 228, 185, 1) 0%,
+      rgba(9, 29, 36, 1) 100%);
+  display: flex;
+  justify-content: center;
+}
+
+section img {
+  max-width: 80%;
+}
