@@ -1,0 +1,11 @@
+.form-input {
+    border: 1px solid #4A4949;
+    border-radius: 8px;
+    background: transparent;
+    padding: 8px 16px;
+    color: #FFFFFF;
+}
+
+.form-input::placeholder {
+    color: #4A4949;
+}

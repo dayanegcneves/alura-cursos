@@ -9,14 +9,13 @@ header {
   justify-content: center;
 }
 
-section {
-  background: linear-gradient(180deg,
-      rgba(23, 228, 185, 1) 0%,
-      rgba(9, 29, 36, 1) 100%);
-  display: flex;
-  justify-content: center;
+.container {
+  width: 1000px;
+  margin: 0 auto;
 }
 
-section img {
-  max-width: 80%;
+.eventos {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }

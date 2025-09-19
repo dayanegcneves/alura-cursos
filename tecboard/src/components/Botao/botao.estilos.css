@@ -1,0 +1,15 @@
+.form-botao {
+    background-color: #17D9B1;
+    color: #212121;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.form-botao:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.form-lista {
+    border: 1px solid #4A4949;
+    border-radius: 8px;
+    background: transparent;
+    padding: 8px 16px;
+    color: #FFFFFF;
+}
+
+.form-lista option {
+    background-color: #4A4949;
+    font-size: 16px;
+    line-height: 120%;
+}

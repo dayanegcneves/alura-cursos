@@ -1,6 +1,8 @@
+import './label.estilos.css'
+
 export function Label({ children, htmlFor }) {
     return (
-        <label htmlFor={htmlFor}>
+        <label className='form-campo-label' htmlFor={htmlFor}>
             {children}
         </label>
     )
