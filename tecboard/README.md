@@ -1,12 +1,98 @@
-# React + Vite
+# Tecboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Aplicação React com JSON Server para simular uma API RESTful.
 
-Currently, two official plugins are available:
+## 🔖 Sumário
+- [Tecboard](#tecboard)
+  - [🔖 Sumário](#-sumário)
+  - [📝 Sobre](#-sobre)
+  - [⚡ Funcionalidades](#-funcionalidades)
+  - [🛠️ Tecnologias](#️-tecnologias)
+  - [🚀 Instalação](#-instalação)
+  - [🎯 Uso](#-uso)
+  - [📸 Exemplos](#-exemplos)
+  - [🗂️ Estrutura do Projeto](#️-estrutura-do-projeto)
+  - [📞 Contato](#-contato)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 Sobre
+  
+> Este projeto é uma aplicação web cadastro de eventos relacionados a tecnologia.
 
-## Expanding the ESLint configuration
+## ⚡ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Cadastro de novos eventos
+- ✅ Listar registros do JSON Server
+
+## 🛠️ Tecnologias
+- **Frontend**: ReactJS, JSX, Hooks
+- **Mock API**: JSON Server,
+- **Estilização:** CSS
+- **Ferramentas:** VS Code, Node.js, Vite
+
+## 🚀 Instalação
+Passo a passo para rodar o projeto localmente:
+```bash
+# Clonar o repositório
+git clone https://github.com/dayanegcneves/alura-cursos.git
+
+# Entrar na pasta do projeto
+cd alura-cursos
+
+# Instalar dependências
+npm install
+
+# Rodar o projeto
+npm start
+
+```
+
+## 🎯 Uso
+
+1. **Rodar o front-end:**
+   Na raiz do projeto, execute:
+
+   ```
+   npm run dev
+   ```
+    Isso iniciará a aplicação React.
+
+
+2. **Rodar o JSON Server (back-end fake):**
+    
+    Entre na pasta do back-end:
+    ```
+    cd backend
+    ```
+    Em seguida, execute:
+    ```
+    npm run start
+    ```
+    Isso iniciará o JSON Server e simulará o banco de dados.
+
+3. **Acessar a aplicação:**
+    - Front-end: http://localhost:5173 (ou a porta que o Vite usar)
+    - API JSON Server: http://localhost:3000 (ou a porta configurada)
+
+## 📸 Exemplos
+- Formulário de cadastro de eventos
+    ![alt text](image.png)
+- Eventos cadastrados
+  ![alt text](image-1.png)
+
+## 🗂️ Estrutura do Projeto
+
+Explique a organização do código:
+
+```
+src/
+├─ components/       # Componentes reutilizáveis
+├─ assets/           # Ícone react
+└─ api/              # Chamadas API
+```
+
+
+## 📞 Contato
+
+LinkedIn: [https://www.linkedin.com/in/dayanegcneves/](https://www.linkedin.com/in/dayanegcneves/)
+
+GitHub: [https://github.com/dayanegcneves](https://github.com/dayanegcneves)

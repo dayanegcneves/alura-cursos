@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Banner } from './components/Banner'
 import { CardEvento } from './components/CardEvento'
 import { FormularioDeEvento } from './components/FormularioDeEvento'
 import { Tema } from './components/Tema'
+import api from './api/api'
 
 function App() {
   const temas = [
@@ -33,19 +34,25 @@ function App() {
     },
   ]
 
-  const [eventos, setEventos] = useState([
-    {
-      capa: 'https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png',
-      tema: temas[0],
-      data: new Date(),
-      titulo: 'Mulheres no Front'
-    }
-  ])
+  const [eventos, setEventos] = useState([]);
 
-  function adicionarEvento(evento) {
-    // eventos.push(evento)
+  useEffect(() => {
+    const carregarEventos = async () => {
+      const response = await api.buscarEventos();
+      const eventosIniciais = response.map((evento) => ({
+        ...evento,
+        data: new Date(evento.data)
+      }))
+      setEventos(eventosIniciais);
+    };
+
+    carregarEventos();
+  }, []);
+
+
+  async function adicionarEvento(evento) {   
+    await api.cadastrarEvento(evento)
     setEventos([...eventos, evento])
-    console.log('eventos => ', eventos);
   }
 
   return (
